@@ -8,8 +8,6 @@ def getYahooData(ticker, startDate, endDate, interval):
         
     # have to convert each date to unix for the yahoo url
     # format for date will be 'DD-MM-YYYY'
-
-
     
 
     startDateUnix = int(datetime.strptime(startDate, '%d-%m-%Y').timestamp())
