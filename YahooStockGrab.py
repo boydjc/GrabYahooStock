@@ -5,8 +5,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 
 def getYahooData(ticker, startDate, endDate, interval):
-    
-    
+        
     # have to convert each date to unix for the yahoo url
     # format for date will be 'DD-MM-YYYY'
 
