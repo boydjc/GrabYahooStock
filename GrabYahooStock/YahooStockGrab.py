@@ -123,9 +123,23 @@ class YahooStockData:
 			error = newDictionary['chart']['error']['description']
 			print(error)
 
+	def getFundamentalData(self, ticker):
+
+		url = "https://query2.finance.yahoo.com/v7/finance/quote?symbols=" + ticker
+
+		res = requests.get(url, headers={"User-Agent":"Mozilla/5.0"})
+		
+		resJson = res.json()
+
+		return resJson
+
+
+
+		
+
 if __name__ == "__main__":
 	ys = YahooStockData()
 
-	data = ys.getStockData('aapl', '14-01-2022', '30-01-2022', '1d')
-
-	print(data)
+	#data = ys.getStockData('aapl', '14-01-2022', '30-01-2022', '1d')
+	#data = ys.getFundamentalData('aapl')
+	#print(data)

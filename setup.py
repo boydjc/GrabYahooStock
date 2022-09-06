@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(name='GrabYahooStock',
-				version='0.1',
+				version='0.2',
 				description='Gets stock data from yahoo finance',
 				url='#',
 				author='me',
